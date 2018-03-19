@@ -111,8 +111,12 @@ dependencies {
   implementation 'com.squareup.retrofit2:converter-moshi:2.3.0'
   implementation 'se.ansman.kotshi:api:1.0.2'
   kapt 'se.ansman.kotshi:compiler:1.0.2'
+
   // Timber
   implementation 'com.jakewharton.timber:timber:4.6.1'
+
+  // ThreeTenABP
+  implementation 'com.jakewharton.threetenabp:threetenabp:1.0.5'
 
   // Kotlin
   implementation "org.jetbrains.kotlin:kotlin-stdlib-jre8:$KOTLIN_VERSION"
