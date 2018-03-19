@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/white</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="toolbarStyle">@style/AppToolbarStyle</item>
+    </style>
+
+    <style name="AppToolbarStyle" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="AppTheme" parent="Base.Theme">
+        <!-- Empty for pre-lollipop -->
+    </style>
+
+    <style name="AppTheme.TransparentStatusBar">
+    </style>
+
+    <style name="AppTheme.TransparentStatusBar.50">
+    </style>
+</resources>

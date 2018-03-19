@@ -1,0 +1,30 @@
+android {
+  defaultConfig {
+    buildConfigField("int", "DB_SCHEMA_VERSION", DB_SCHEMA_VERSION)
+
+    buildConfigField "String",  "HTTPS",                "\"https\""
+    buildConfigField "String",  "HTTP",                 "\"http\""
+    buildConfigField "int",     "PORT_GRPC",            "3000"
+
+    // FIXME should delete
+    buildConfigField "String",  "NASA_ENDPOINT",        "\"api.nasa.gov\""
+  }
+
+  flavorDimensions "develop"
+  productFlavors {
+    develop {
+      dimension "develop"
+      resValue "string", "app_name", "Wasa Dev"
+      manifestPlaceholders = [domain: 'wasabeef.jp']
+    }
+    staging {
+      dimension "develop"
+      resValue "string", "app_name", "Wasa Stg"
+      manifestPlaceholders = [domain: 'wasabeef.jp']
+    }
+    production {
+      resValue "string", "app_name", "Wasa"
+      manifestPlaceholders = [domain: 'wasabeef.jp']
+    }
+  }
+}

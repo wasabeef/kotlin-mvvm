@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--FontSize-->
+    <!--FIXME you need change to appropriate name-->
+    <dimen name="font_medium">14sp</dimen>
+    <dimen name="font_large">20sp</dimen>
+    <dimen name="font_larger">24sp</dimen>
+
+    <!--Margin-->
+    <dimen name="space_8dp">8dp</dimen>
+    <dimen name="space_16dp">16dp</dimen>
+    <dimen name="space_24dp">24dp</dimen>
+    <dimen name="space_48dp">48dp</dimen>
+
+    <!--Size-->
+    <dimen name="height_56dp">56dp</dimen>
+    <dimen name="width_500dp">500dp</dimen>
+
+    <!-- Bottom Navigation Text-->
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">10sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">10sp</dimen>
+
+</resources>

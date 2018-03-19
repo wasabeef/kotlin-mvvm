@@ -1,0 +1,25 @@
+apply plugin: 'findbugs'
+
+dependencies {
+  findbugs "com.google.code.findbugs:findbugs:$FINDBUGS_VERSION"
+}
+
+task findbugs(type: FindBugs) {
+  classes = fileTree("$buildDir/tmp/kotlin-classes")
+  source = fileTree('src/main/kotlin')
+  classpath = files()
+
+  findbugs {
+    toolVersion = "$FINDBUGS_VERSION"
+    sourceSets = [android.sourceSets]
+    ignoreFailures = true
+    effort = "max"
+    reportLevel = "low"
+    excludeFilter = file("$project.rootDir/gradle/findbugs-android-exclude.xml")
+  }
+
+  reports {
+    xml.enabled = true
+    html.enabled = false
+  }
+}

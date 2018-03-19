@@ -1,0 +1,11 @@
+<resources>
+    <!--<string name="app_name">wasabeef</string>-->
+
+    <!-- Common -->
+
+    <!-- Bottom Navigation -->
+    <string name="home">Home</string>
+    <string name="info">Info</string>
+    <string name="my_page">MyPage</string>
+
+</resources>

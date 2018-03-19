@@ -1,0 +1,8 @@
+<resources>
+    <!-- Widget -->
+    <style name="Widget"/>
+
+    <declare-styleable name="ForegroundImageView">
+        <attr name="android:foreground"/>
+    </declare-styleable>
+</resources>
