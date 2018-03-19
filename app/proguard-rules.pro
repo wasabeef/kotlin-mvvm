@@ -96,7 +96,7 @@
 }
 #################
 
-##### SuperChoice #####
+##### Wasabeef #####
 # Protobuf
 -keep class jp.wasabeef.data.proto.** { *; }
 -keep class jp.wasabeef.data.grpc.** { *; }
